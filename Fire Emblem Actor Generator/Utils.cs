@@ -15,31 +15,31 @@ namespace Fire_Emblem_Actor_Generator
             while (actor.statBlock.level < level)
             {
                 actor.statBlock.level++;
-                if(rnd.Next(1, 100) < actor.statGrowthBlock.hp)
+                if(rnd.Next(1, 101) < actor.statGrowthBlock.hp)
                 {
                     actor.statBlock.hp++;
                 }
-                if (rnd.Next(1, 100) < actor.statGrowthBlock.str)
+                if (rnd.Next(1, 101) < actor.statGrowthBlock.str)
                 {
                     actor.statBlock.str++;
                 }
-                if (rnd.Next(1, 100) < actor.statGrowthBlock.mag)
+                if (rnd.Next(1, 101) < actor.statGrowthBlock.mag)
                 {
                     actor.statBlock.mag++;
                 }
-                if (rnd.Next(1, 100) < actor.statGrowthBlock.skill)
+                if (rnd.Next(1, 101) < actor.statGrowthBlock.skill)
                 {
                     actor.statBlock.skill++;
                 }
-                if (rnd.Next(1, 100) < actor.statGrowthBlock.spd)
+                if (rnd.Next(1, 101) < actor.statGrowthBlock.spd)
                 {
                     actor.statBlock.spd++;
                 }
-                if (rnd.Next(1, 100) < actor.statGrowthBlock.def)
+                if (rnd.Next(1, 101) < actor.statGrowthBlock.def)
                 {
                     actor.statBlock.def++;
                 }
-                if (rnd.Next(1, 100) < actor.statGrowthBlock.res)
+                if (rnd.Next(1, 101) < actor.statGrowthBlock.res)
                 {
                     actor.statBlock.res++;
                 }

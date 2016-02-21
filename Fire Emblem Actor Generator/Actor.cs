@@ -19,7 +19,7 @@ namespace Fire_Emblem_Actor_Generator
             statBlock = new StatBlock();
             statGrowthBlock = new StatGrowthBlock();
 
-            if (rnd.Next(0, 1) == 0)
+            if (rnd.Next(0, 2) == 0)
             {
                 gender = "Male";
             }

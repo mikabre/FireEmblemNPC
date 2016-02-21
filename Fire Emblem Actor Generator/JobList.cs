@@ -63,11 +63,11 @@ namespace Fire_Emblem_Actor_Generator
             Utils.LevelActor(actor, level);
             return actor;
         }
-        public static Actor GetBaseValkrie(int level)
+        public static Actor GetBaseValkyrie(int level)
         {
             Actor actor = new Actor(level)
             {
-                name = "Valkrie",
+                name = "Valkyrie",
                 statBlock = new StatBlock(30, 4, 17, 16, 18, 4, 14, 8, 9),
                 statGrowthBlock = new StatGrowthBlock(55, 15, 45, 40, 45, 15, 35)
             };
