@@ -179,7 +179,7 @@ namespace Fire_Emblem_Actor_Generator
 
         private void btnCopy_Click(object sender, EventArgs e)
         {
-
+            Clipboard.SetText(txtOutput.Text);
         }
 
         private void cmbJob_SelectedIndexChanged(object sender, EventArgs e)
