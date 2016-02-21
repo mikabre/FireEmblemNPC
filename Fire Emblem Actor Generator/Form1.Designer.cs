@@ -169,7 +169,7 @@
             this.Controls.Add(this.cmbJob);
             this.Controls.Add(this.txtOutput);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Fire Emblem NPC Generator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
