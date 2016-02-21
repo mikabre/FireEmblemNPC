@@ -33,18 +33,18 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 312);
+            this.textBox1.Location = new System.Drawing.Point(12, 208);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(594, 140);
+            this.textBox1.Size = new System.Drawing.Size(256, 244);
             this.textBox1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 464);
+            this.ClientSize = new System.Drawing.Size(286, 464);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";

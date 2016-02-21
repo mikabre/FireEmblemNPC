@@ -35,7 +35,7 @@ namespace Fire_Emblem_Actor_Generator
 
         public string Display()
         {
-            return statBlock.Display();
+            return gender + " " + name + Environment.NewLine + statBlock.Display() + statGrowthBlock.Display();
         }
     }
 }

@@ -32,15 +32,17 @@ namespace Fire_Emblem_Actor_Generator
             this.res = res;
         }
 
-        public virtual void Display()
+        public virtual string Display()
         {
-            Console.WriteLine("HP GROWTH: {0}%", hp);
-            Console.WriteLine("STR GROWTH: {0}%", str);
-            Console.WriteLine("MAG GROWTH: {0}%", mag);
-            Console.WriteLine("SKILL GROWTH: {0}%", skill);
-            Console.WriteLine("SPD GROWTH: {0}%", spd);
-            Console.WriteLine("DEF GROWTH: {0}%", def);
-            Console.WriteLine("RES GROWTH: {0}%", res);
+            string output = "HP GROWTH: " + hp + "%" + Environment.NewLine;
+            output += "STR GROWTH: " + str + "%" + Environment.NewLine;
+            output += "MAG GROWTH: " + mag + "%" + Environment.NewLine;
+            output += "SKILL GROWTH: " + skill + "%" + Environment.NewLine;
+            output += "SPD GROWTH: " + spd + "%" + Environment.NewLine;
+            output += "DEF GROWTH: " + def + "%" + Environment.NewLine;
+            output += "RES GROWTH: " + res + "%" + Environment.NewLine;
+
+            return output;
         }
     }
 }
