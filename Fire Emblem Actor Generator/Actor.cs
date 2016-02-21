@@ -6,15 +6,36 @@ using System.Threading.Tasks;
 
 namespace Fire_Emblem_Actor_Generator
 {
-    public interface Actor
+    public class Actor : IActor
     {
-        string name { get; set; }
-        string gender { get; set; }
-        StatBlock statBlock { get; set; }
-        StatGrowthBlock statGrowthBlock { get; set; }
-        StatGrowthBlock statFollowerGrowthBlock { get; set; }
-        StatGrowthBlock statCustomGrowthBlock { get; set; }
+        public string gender { get; set; }
+        public string name { get; set; }
+        public StatBlock statBlock { get; set; }
+        public StatGrowthBlock statGrowthBlock { get; set; }
 
-        void Display();
+        public Actor(int level)
+        {
+            Random rnd = new Random();
+            statBlock = new StatBlock();
+            statGrowthBlock = new StatGrowthBlock();
+
+            if (rnd.Next(0, 1) == 0)
+            {
+                gender = "Male";
+            }
+            else
+            {
+                gender = "Female";
+            }
+            if(statBlock.level < level)
+            {
+              
+            }
+        }
+
+        public string Display()
+        {
+            return statBlock.Display();
+        }
     }
 }

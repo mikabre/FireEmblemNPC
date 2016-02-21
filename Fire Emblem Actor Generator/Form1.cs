@@ -15,6 +15,7 @@ namespace Fire_Emblem_Actor_Generator
         public Form1()
         {
             InitializeComponent();
+            textBox1.Text = JobList.GetBaseMyrmidon(15).Display();
         }
     }
 }

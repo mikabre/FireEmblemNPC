@@ -16,6 +16,11 @@ namespace Fire_Emblem_Actor_Generator
         public int def { get; set; }
         public int res { get; set; }
 
+        public StatGrowthBlock()
+        {
+            //do fuck all, lol
+        }
+
         public StatGrowthBlock(int hp, int str, int mag, int skill, int spd, int def, int res)
         {
             this.hp = hp;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fire_Emblem_Actor_Generator;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,33 +9,40 @@ namespace Fire_Emblem_Actor_Generator
 {
     static class Utils
     {
-        public static StatBlock LevelActor(StatBlock statBlock, StatGrowthBlock statGrowthBlock, int level)
+        public static void LevelActor(this Actor actor, int level)
         {
             Random rnd = new Random();
-            while (statBlock.level < level)
+            while (actor.statBlock.level < level)
             {
-                var props = statGrowthBlock.GetType().GetProperties();
-                foreach (var prop in props)
+                actor.statBlock.level++;
+                if(rnd.Next(1, 100) < actor.statGrowthBlock.hp)
                 {
-                    if (LevelStat(prop., rnd))
-                    {
-                        statBlock.hp++;
-                    }
+                    actor.statBlock.hp++;
                 }
-
-                level = 0;
-            }
-            return statBlock;
-        }
-
-        public static bool LevelStat(int growth, Random rnd)
-        {
-            if (rnd.Next(1, 100) <= growth)
-            {
-                return true;
-            } else
-            {
-                return false;
+                if (rnd.Next(1, 100) < actor.statGrowthBlock.str)
+                {
+                    actor.statBlock.str++;
+                }
+                if (rnd.Next(1, 100) < actor.statGrowthBlock.mag)
+                {
+                    actor.statBlock.mag++;
+                }
+                if (rnd.Next(1, 100) < actor.statGrowthBlock.skill)
+                {
+                    actor.statBlock.skill++;
+                }
+                if (rnd.Next(1, 100) < actor.statGrowthBlock.spd)
+                {
+                    actor.statBlock.spd++;
+                }
+                if (rnd.Next(1, 100) < actor.statGrowthBlock.def)
+                {
+                    actor.statBlock.def++;
+                }
+                if (rnd.Next(1, 100) < actor.statGrowthBlock.res)
+                {
+                    actor.statBlock.res++;
+                }
             }
         }
     }
