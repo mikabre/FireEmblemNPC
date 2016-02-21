@@ -18,7 +18,7 @@ namespace Fire_Emblem_Actor_Generator
 
         public StatGrowthBlock()
         {
-            //do fuck all, lol
+            //do fuck all, lol!
         }
 
         public StatGrowthBlock(int hp, int str, int mag, int skill, int spd, int def, int res)
